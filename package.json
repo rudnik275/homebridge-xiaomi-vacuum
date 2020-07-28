@@ -1,0 +1,19 @@
+{
+  "name": "homebridge-xiaomi-vacuum",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "npm run build:config && npm run start:homebridge",
+    "start:homebridge": "npx homebridge -U ./ -P ./node_modules/homebridge-xiaomi-roborock-vacuum",
+    "build:config": "node generateConfig.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "homebridge": "^1.1.1",
+    "homebridge-mi-remote": "^0.3.8",
+    "homebridge-xiaomi-roborock-vacuum": "^0.13.0",
+    "miio": "^0.15.6"
+  }
+}
